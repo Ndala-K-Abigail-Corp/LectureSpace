@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LectureSpace - Add Classroom</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="header-content">
+      <a href="#">
+        <img src="/RoomAllocation/Lecturespace 2.png" width="200px" alt="LectureSpace Logo"> </a>
+      <h1>LectureSpace Admin Dashboard</h1>
+    </div>
+  </header>
+  <main>
+    <h2>Add New Classroom</h2>
+    <form id="classroom-form" method="post" action="classroom.php">
+      <div class="form-group">
+        <label for="classroom-id">Classroom ID:</label>
+        <input type="text" id="classroom-id" name="classroom-id" required>
+      </div>
+      <div class="form-group">
+        <label for="classroom-name">Classroom Name:</label>
+        <input type="text" id="classroom-name" name="classroom-name" required>
+      </div>
+      <div class="form-group">
+        <label for="classroom-type">Classroom Type:</label>
+        <label for="classroom-type-practical">Practical</label>
+        <input type="radio" id="classroom-type-practical" name="classroom-type" value="practical" required>
+        <label for="classroom-type-theoretical">Theoretical</label>
+        <input type="radio" id="classroom-type-theoretical" name="classroom-type" value="theoretical" required>
+
+      </div>
+      <div class="form-group">
+        <label for="classroom-seats">Seating Capacity:</label>
+        <select id="classroom-seats" name="classroom-seats" required>
+          <option value="1-50">1-50 Seats</option>
+          <option value="51-100">50-100 Seats</option>
+          <option value="101-250">100-250 Seats</option>
+        </select>
+      </div>
+
+      <button type="submit">Add Classroom</button>
+      <button id ="back-button"> Back to Dashboard</button>
+    </form>
+  </main>
+  <script>
+    document.getElementById("back-button").addEventListener("click", function(){
+        window.location.href="/RoomAllocation/admin/index.html";
+    });
+  </script>
+</body>
+
+</html>
