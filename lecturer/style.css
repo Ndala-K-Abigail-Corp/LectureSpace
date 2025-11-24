@@ -1,0 +1,74 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8; /* Light grey background color */
+  color: #333; /* Dark grey text color */
+}
+
+header {
+  background-color: #800000; /* Burgundy header background color */
+  color: #fff; /* White text color */
+  padding: 20px;
+  text-align: center;
+}
+
+main {
+  padding: 20px;
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  background-color: #fff; /* White background color for profile container */
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+.profile-container img {
+  width: 400px;
+  height: 400px;
+  border-radius: 100%;
+  margin-right: 20px;
+}
+
+.student-details {
+  flex: 1;
+}
+
+.student-details h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.student-details p {
+  margin: 5px 0;
+}
+
+
+
+.dashboard-button {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #800000; /* Burgundy button background color */
+  color: #fff; /* White text color */
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 10px;
+  transition: background-color 0.3s;
+}
+
+.dashboard-button:hover {
+  background-color: #5b0000; 
+}
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 5px 0; 
+  position:absolute;
+ bottom: 0;
+  width: 100%;
+}

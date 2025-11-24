@@ -1,0 +1,45 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8; /* Light grey background color */
+  color: #333; /* Dark grey text color */
+}
+
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+header {
+  background-color: #800000; /* Burgundy color */
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+main {
+  padding: 20px;
+}
+
+#schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white; /* White background color for table */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+#schedule-table th,
+#schedule-table td {
+  padding: 8px;
+  border: 1px solid #ddd; /* Light grey border color */
+}
+
+#schedule-table tr:nth-child(even) {
+  background-color: #f2f2f2; /* Light grey background color for even rows */
+}

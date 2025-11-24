@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8; /* Light grey background color */
+    color: #333; /* Dark grey text color */
+  }
+  
+  header {
+    background-color: #800000; /* Burgundy header background color */
+    color: white; /* White text color */
+    padding: 15px;
+    text-align: center;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M7.406 7.781L12 12.375l4.594-4.594 1.406 1.406L12 14.188 5.594 8.188z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+  }
+  
+  button{
+    padding: 10px 20px;
+    background-color: #800000; /* Burgundy button background color */
+    color: white; /* White text color */
+    border: none;
+  }
+  footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px 0px; 
+    position: static;
+    
+   bottom: 0;
+    width: 100%;
+  }
+  #signup {
+    background-color: #800000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  #signup h2 {
+    margin-bottom: 10px;
+  }
+  
+  .register-btn{
+    background-color: #fff;
+    color: #800000;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
