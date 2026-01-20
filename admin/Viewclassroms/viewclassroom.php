@@ -13,14 +13,14 @@
     <header>
         <div class="header-content">
             <a href="#">
-                <img src="/RoomAllocation/Lecturespace 2.png" width="200px" alt="LectureSpace Logo"> </a>
+                <img src="../../Lecturespace 2.png" width="200px" alt="LectureSpace Logo"> </a>
             <h1>LectureSpace Admin Dashboard</h1>
         </div>
     </header>
     <main>
         <?php
         session_start();
-        require 'C:\xampp\htdocs\RoomAllocation\connection.php';
+        require __DIR__ . '/../../connection.php';
         // Check if the user_id is stored in session and retrieve it
         if (!isset($_SESSION['user_id'])) {
             // Redirect to login page if not logged in
@@ -29,11 +29,11 @@
         }
 
         // Prepare an SQL statement to fetch all classrooms
-        $sql = "SELECT classroom_id, classroom_name, classroom_type, 
-                 CASE 
-                     WHEN seating_capacity BETWEEN 1 AND 50 THEN '1-50' 
-                     WHEN seating_capacity BETWEEN 51 AND 100 THEN '51-100' 
-                     WHEN seating_capacity BETWEEN 101 AND 250 THEN '101-250' 
+        $sql = "SELECT classroom_id, classroom_name, classroom_type,
+                 CASE
+                     WHEN seating_capacity BETWEEN 1 AND 50 THEN '1-50'
+                     WHEN seating_capacity BETWEEN 51 AND 100 THEN '51-100'
+                     WHEN seating_capacity BETWEEN 101 AND 250 THEN '101-250'
                  END AS seating_capacity_range
           FROM classrooms";
         $result = $conn->query($sql);

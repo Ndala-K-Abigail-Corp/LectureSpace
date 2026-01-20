@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-require 'C:\xampp\htdocs\RoomAllocation\connection.php';
+require __DIR__ . '/../../connection.php';
 
 if (!isset($_SESSION['user_id'])) {
     echo "You are not authorized to perform this action.";

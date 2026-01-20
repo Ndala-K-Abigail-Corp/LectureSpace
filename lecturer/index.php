@@ -2,7 +2,7 @@
 <?php
 session_start();
 
-require 'C:\xampp\htdocs\RoomAllocation\connection.php';
+require __DIR__ . '/../connection.php';
 
 // Check if the user_id is stored in session and retrieve it
 if (!isset($_SESSION['user_id'])) {
@@ -46,7 +46,7 @@ $conn->close();
 </head>
 <body>
   <header>
-    <img src="/RoomAllocation/Lecturespace 2.png" width="120px" alt="LectureSpace Logo">
+    <img src="../Lecturespace 2.png" width="120px" alt="LectureSpace Logo">
     <h1>LectureSpace Lecturer Dashboard</h1>
   </header>
   <main>
@@ -60,9 +60,9 @@ $conn->close();
       </div>
     </div>
     <div class="button-container">
-      <a href="/RoomAllocation/lecturer/viewlecturespace/view.php" class="dashboard-button">View LectureSpace</a>
-      <a href="/RoomAllocation/lecturer/Viewcourses/viewcourses.php" class="dashboard-button">View Courses</a>
-      <a href="/RoomAllocation/lecturer/addcourses/course.php" class="dashboard-button">Add Courses</a>
+      <a href="viewlecturespace/view.php" class="dashboard-button">View LectureSpace</a>
+      <a href="Viewcourses/viewcourses.php" class="dashboard-button">View Courses</a>
+      <a href="addcourses/course.php" class="dashboard-button">Add Courses</a>
       <button onclick="logout()">Logout</button>
     </div>
   </main>

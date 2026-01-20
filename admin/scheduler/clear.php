@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-    
+
 </body>
 </html>
 <?php
-require 'C:\xampp\htdocs\RoomAllocation\connection.php';
+require __DIR__ . '/../../connection.php';
 
 $sql = "DELETE FROM classcourse";
 if ($conn->query($sql) === TRUE) {

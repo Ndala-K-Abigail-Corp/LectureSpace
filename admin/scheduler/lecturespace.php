@@ -1,5 +1,5 @@
 <?php
-require 'C:\xampp\htdocs\RoomAllocation\connection.php';
+require __DIR__ . '/../../connection.php';
 require 'assign_course.php';
 
 // Fetch assigned course IDs

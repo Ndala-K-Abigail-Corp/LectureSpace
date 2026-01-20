@@ -1,10 +1,10 @@
 <?php
-require 'C:\xampp\htdocs\RoomAllocation\connection.php';
+require __DIR__ . '/../connection.php';
 
 // Admin user details
 $email = "lecturespace@example.com";
 $fullName = "Lecture Space";
-$password = "@Lecture2024";  
+$password = "@Lecture2024";
 $userType = "admin";
 $college = "Admin Department";
 $adminId = "ADMIN001";

@@ -11,7 +11,7 @@
 
 <body>
   <header>
-    <img src="/RoomAllocation/Lecturespace 2.png" width="200px" alt="LectureSpace Logo"> </a>
+    <img src="../../Lecturespace 2.png" width="200px" alt="LectureSpace Logo"> </a>
     <h1>Admin - View Courses</h1>
   </header>
   <nav>
@@ -28,19 +28,19 @@
         exit;
       }
 
-      require 'C:\xampp\htdocs\RoomAllocation\connection.php';
+      require __DIR__ . '/../../connection.php';
 
       // Fetch courses with lecturer's name and manipulated student intake range
-      $sql = "SELECT c.course_id, c.course_name, 
-                   CASE 
-                       WHEN c.num_students = 1 THEN '1-50' 
-                       WHEN c.num_students = 51 THEN '51-100' 
-                       WHEN c.num_students = 101 THEN '101-250' 
+      $sql = "SELECT c.course_id, c.course_name,
+                   CASE
+                       WHEN c.num_students = 1 THEN '1-50'
+                       WHEN c.num_students = 51 THEN '51-100'
+                       WHEN c.num_students = 101 THEN '101-250'
                    END AS students_range,
-                   c.course_type, 
-                   u.full_name, 
-                   c.student_intake, 
-                   c.college 
+                   c.course_type,
+                   u.full_name,
+                   c.student_intake,
+                   c.college
             FROM courses c
             INNER JOIN users u ON c.lecturer_id = u.user_id";
       $result = $conn->query($sql);

@@ -1,5 +1,5 @@
 <?php
-require 'C:\xampp\htdocs\RoomAllocation\connection.php';  
+require __DIR__ . '/../../connection.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Collect input data from the form
@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->execute();
 
     if ($stmt->affected_rows > 0) {
-        header('Location: /RoomAllocation/admin/index.html');
+        header('Location: ../index.html');
         exit;
     } else {
         echo "Error adding classroom: " . $conn->error;
@@ -23,4 +23,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->close();
     $conn->close();
 }
-

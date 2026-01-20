@@ -1,5 +1,5 @@
 <?php
-require 'C:\xampp\htdocs\RoomAllocation\connection.php'; 
+require __DIR__ . '/../../connection.php';
 
 $courseId = $_POST['course_id'];
 

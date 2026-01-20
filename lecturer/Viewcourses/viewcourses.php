@@ -11,7 +11,7 @@
 
 <body>
   <header>
-    <img src="/RoomAllocation/Lecturespace 2.png" width="200px" alt="LectureSpace Logo"> </a>
+    <img src="../../Lecturespace 2.png" width="200px" alt="LectureSpace Logo"> </a>
     <h1>LectureSpace Lecturer Dashboard</h1>
   </header>
   <nav>
@@ -30,7 +30,7 @@
       }
 
       // Include the database connection
-      require 'C:\xampp\htdocs\RoomAllocation\connection.php';
+      require __DIR__ . '/../../connection.php';
 
       $lecturerId = $_SESSION['user_id'];  // Use lecturer's user ID from session
       // Fetch courses added by the logged-in lecturer

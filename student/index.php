@@ -9,7 +9,7 @@ if (!isset($_SESSION['user_id'])) {
 }
 
 // Include the database connection
-require 'C:\xampp\htdocs\RoomAllocation\connection.php';
+require __DIR__ . '/../connection.php';
 
 // Prepare an SQL statement to fetch student details
 $stmt = $conn->prepare("SELECT users.full_name, users.college, students.student_id, students.intake
@@ -38,7 +38,7 @@ if ($result->num_rows > 0) {
 </head>
 <body>
   <header>
-    <img src="/RoomAllocation/Lecturespace 2.png" width="200px" alt="LectureSpace Logo">
+    <img src="../Lecturespace 2.png" width="200px" alt="LectureSpace Logo">
     <h1>LectureSpace Student Dashboard</h1>
   </header>
   <main>
@@ -52,7 +52,7 @@ if ($result->num_rows > 0) {
         <p>College: <span><?= $studentDetails['college']; ?></span></p>
       </div>
     </div>
-    <a href="/RoomAllocation/student/viewlecturespace/view.php" class="view-button">View LectureSpace</a>
+    <a href="viewlecturespace/view.php" class="view-button">View LectureSpace</a>
     <button onclick="logout()">Logout</button>
   </main>
   <footer>

@@ -1,6 +1,6 @@
 <?php
 session_start();
-require 'C:\xampp\htdocs\RoomAllocation\connection.php';
+require __DIR__ . '/../../connection.php';
 
 if (isset($_GET['id']) && !empty($_GET['id'])) {
     $classroom_id = $conn->real_escape_string($_GET['id']);

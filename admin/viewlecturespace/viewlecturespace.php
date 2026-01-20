@@ -1,5 +1,5 @@
 <?php
-require 'C:\xampp\htdocs\RoomAllocation\connection.php';
+require __DIR__ . '/../../connection.php';
 
 // Fetch all schedule entries from the database
 $query = "
@@ -27,7 +27,7 @@ if (!$result) {
 
 <body>
     <header>
-        <img src="/RoomAllocation/Lecturespace 2.png" width="200px" alt="LectureSpace Logo">
+        <img src="../../Lecturespace 2.png" width="200px" alt="LectureSpace Logo">
         <h1>LectureSpace - Schedule</h1>
         <div class="export-buttons">
             <button id="export-csv">Export to CSV</button>
