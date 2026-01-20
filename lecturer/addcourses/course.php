@@ -8,7 +8,7 @@ if (!isset($_SESSION['user_id'])) {
 }
 
 // Include the database connection
-require 'C:\xampp\htdocs\RoomAllocation\connection.php';
+require __DIR__ . '/../../connection.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $courseId = $conn->real_escape_string($_POST['course-id']);
@@ -49,7 +49,7 @@ $conn->close();
 
 <body>
     <header>
-        <img src="/RoomAllocation/Lecturespace 2.png" width="200px" alt="LectureSpace Logo"> </a>
+        <img src="../../Lecturespace 2.png" width="200px" alt="LectureSpace Logo"> </a>
         <h1>LectureSpace Lecturer Dashboard</h1>
     </header>
     <nav>
@@ -126,7 +126,7 @@ $conn->close();
     </main>
     <script>
     document.getElementById("back-button").addEventListener("click", function(){
-        window.location.href="/RoomAllocation/lecturer/index.php";
+        window.location.href="../index.php";
     });
     </script>
 </body>
